@@ -1,0 +1,256 @@
+body{
+    font-family: "Montserrat", sans-serif; 
+    background-color: #f3f1f3;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Your custom container class */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  
+  
+  /* Optional: Add a max-width for responsiveness */
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  
+
+
+  /* header section  */
+
+
+  .header-section{
+    padding: 20px 0px;
+    background-color: white;
+
+  }
+  .desk-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-item ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+
+  }
+  .menu-item ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+  }
+  .menu-item ul li a:hover{
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .menu-item {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .btn button{
+        background: #b43464;
+        color: white;
+        height: 48px;
+        line-height: 46px;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 0px 34px;
+        font-size: 12px;
+        text-transform: uppercase;
+        max-width: 100%;
+        font-weight: 600;
+        border: 2px solid #b43464;
+        text-align: center;
+        overflow: hidden;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+  }
+  .btn button:hover{
+    background: #1cd4b9;
+    border: 2px solid #1cd4b9;
+    color: white;
+  }
+  
+
+  /* hero-section */
+
+  .hero-section{
+    padding: 30px 0px;
+  }
+
+  .flex-hero{
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+
+
+  /* about-us */ 
+
+  .about-us{
+    padding: 30px 0px;
+  }
+
+  .about-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  /* services-section */
+
+  .services-section{
+    padding: 30px 0px;
+  }
+
+  .services-list{
+    padding: 20px 0px;
+  }
+.services-list ul li{
+    padding: 10px 0px;
+
+}
+
+
+
+
+/* form-contact */
+
+.form-contact{
+    max-width: 300px;
+    width: 100%;
+    margin: auto
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+
+input{
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+  input::placeholder,
+  textarea::placeholder{
+    color: #d1d1d1 ;
+    
+  }
+select{
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+textarea{
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none; 
+
+}
+
+
+.btn-submit button{
+    background: #827f9a;
+    color: #c1c0cf
+    ;
+    height: 48px;
+    line-height: 46px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    font-weight: 600;
+    max-width: 100%;
+    padding: 0px 34px;
+    font-size: 12px;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-weight: 600;
+    border: 2px solid #827f9a;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+  /* media query */
+
+  @media(min-width:776px){
+    .title{
+        color: #1a1a1a;
+        line-height: 1.2em;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 35px;
+        font-weight: 700;
+        padding: 10px;
+    }
+  }
+
+  @media(max-width:800px){
+
+    .menu-item{
+        display: none;
+    }
+    .flex-hero{
+        flex-direction: column;
+    }
+  }
