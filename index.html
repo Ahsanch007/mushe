@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Mushe-group</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
@@ -39,10 +41,36 @@
                             </button>
                         </div>
                     </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </nav>
             </div>
         </section>
 
+        <div class="container">
+
+            <div class="mob">
+                <ul>
+                    <li><a href="">
+                            Data & AI
+                        </a></li>
+                    <li><a href="">
+                            Software
+                        </a></li>
+                    <li><a href="">
+                            Financial Markets
+                        </a></li>
+                </ul>
+                <div class="btn">
+                    <button>
+                        Contact us
+                    </button>
+                </div>
+            </div>
+        </div>
 
         <!-- hero section  -->
         <section class="hero-section">
@@ -319,14 +347,19 @@
             <div class="container">
 
 
-                <div class="text-center">
-                    <h1 class="about-title">
-                        Contact us
 
-                    </h1>
-
-                </div>
                 <form action="" class="form-contact">
+                    <div class="text-center">
+                        <h1 class="about-title">
+                            Contact us
+
+                        </h1>
+
+                    </div>
+                    <hr style="margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    border: 0;
+                    border-top: 1px solid rgba(0, 0, 0, 0.1);">
                     <div class="name">
                         <label for="">Name</label>
                         <input type="text" placeholder="Your Name">
@@ -364,19 +397,66 @@
                         </h1>
 
                     </div>
-                    <div style="display: flex; gap: 30px;">
-                        <img src="./assets/images/social.png" alt="">
+                    <div style="display: flex; gap: 30px; justify-content: center;">
                         <h1 class="about-title" style="font-size: 20px;">
                             Whats app us here
 
                         </h1>
+
+                        <img src="./assets/images/social.png" alt="">
+
                     </div>
                 </form>
             </div>
         </section>
 
-    </div>
 
+        <footer class="footer-section">
+            <div class="container">
+                <div class="flex-hero">
+
+                    <div class="column">
+                        <div class="log">
+                            <h2 class="text-white">logo here</h2>
+                            <h4 class="text-white">
+                                Data Analytics, Machine Learning and Custom Software.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="display: flex; justify-content: end;">
+                            <div class="">
+                                <h4 class="text-white">
+                                    Follow Us
+                                </h4>
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a></li>
+                                        <li><a href="">
+                                                <i class="fab fa-twitter"></i>
+                                            </a></li>
+                                        <li><a href="">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".navbar-toggler").click(function () {
+                $(".mob").toggleClass("open"); // Toggle the 'open' class on button click
+            });
+        });
+    </script>
 </body>
 
 </html>
