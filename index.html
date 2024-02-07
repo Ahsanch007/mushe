@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <title>Mushe-group</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
@@ -25,13 +24,13 @@
                     </div>
                     <div class="menu-item">
                         <ul>
-                            <li><a href="">
+                            <li><a href="#dataAI">
                                     Data & AI
                                 </a></li>
-                            <li><a href="">
+                            <li><a href="#software">
                                     Software
                                 </a></li>
-                            <li><a href="">
+                            <li><a href="#markets">
                                     Financial Markets
                                 </a></li>
                         </ul>
@@ -54,13 +53,13 @@
 
             <div class="mob">
                 <ul>
-                    <li><a href="">
+                    <li><a href="#dataAI">
                             Data & AI
                         </a></li>
-                    <li><a href="">
+                    <li><a href="#software">
                             Software
                         </a></li>
-                    <li><a href="">
+                    <li><a href="#markets">
                             Financial Markets
                         </a></li>
                 </ul>
@@ -73,11 +72,11 @@
         </div>
 
         <!-- hero section  -->
-        <section class="hero-section">
+        <section class="hero-section" id="dataAI">
             <div class="container">
                 <div class="flex-hero">
                     <div class="column">
-                        <div style="padding: 40px 0px;">
+                        <div class="start-title">
                             <h2 class="title">Leaders in data, <br>
                                 Artificial <br>
                                 Intelligence (AI) <br>
@@ -110,7 +109,7 @@
         <section class="about-us">
             <div class="container">
                 <div class="text-center">
-                    <h1 class="about-title">
+                    <h1 class="about-title shadoow">
                         About Us
                     </h1>
 
@@ -130,6 +129,10 @@
                         data, loT data and media(Video, Audio, Images).
                     </p>
                 </div>
+                <div class="img">
+                    <img src="./assets/images/WhatsApp Image 2024-02-07 at 11.16.36_3312a61f.jpg" style="width: 100%;"
+                        alt="">
+                </div>
             </div>
         </section>
 
@@ -139,7 +142,7 @@
         <section class="services-section">
             <div class="container">
                 <div class="text-center">
-                    <h1 class="about-title">
+                    <h1 class="about-title shadoow">
                         Services
                     </h1>
                 </div>
@@ -180,7 +183,7 @@
                 </div>
 
                 <div class="text-center">
-                    <h1 class="about-title">
+                    <h1 class="about-title2">
                         Security, Privacy, Reliability <br>
                         Speed, Rebust , Scale
                     </h1>
@@ -195,14 +198,14 @@
 
         <!-- software section  -->
 
-        <section class="services-section">
+        <section class="services-section" id="software">
             <div class="container">
 
                 <div class="flex-hero">
 
                     <div class="column">
                         <div>
-                            <h1 class="about-title" style="margin: 0px; padding: 0px 15px;">
+                            <h1 class="about-title" style="margin: 0px; ">
                                 Software
                             </h1>
                             <p class="tech-desc" style="font-weight: 600; color: #1a1a1a;">Big company announcement or
@@ -232,7 +235,7 @@
                 </div>
 
                 <div class="text-center">
-                    <h1 class="about-title">
+                    <h1 class="about-title2">
                         DEVELOP, IMPLEMENT, HOST, <br>
                         MAINTAIN, SUPPORT
                     </h1>
@@ -247,7 +250,7 @@
 
         <!-- Markets section  -->
 
-        <section class="services-section">
+        <section class="services-section" id="markets">
             <div class="container">
 
                 <div class="flex-hero">
@@ -287,7 +290,7 @@
                 </div>
 
                 <div class="text-center">
-                    <h1 class="about-title">
+                    <h1 class="about-title2">
                         Man, Machine, Strategy
 
                     </h1>
@@ -308,7 +311,7 @@
 
 
                 <div class="text-center">
-                    <h1 class="about-title">
+                    <h1 class="about-title2">
                         Expert in fast, robust, secure <br>
                         Technology
 
@@ -390,22 +393,8 @@
                             Submit
                         </button>
                     </div>
-                    <div class="text-center">
-                        <h1 class="about-title" style="padding: 30px 0px;">
-                            Or
 
-                        </h1>
 
-                    </div>
-                    <div style="display: flex; gap: 30px; justify-content: center;">
-                        <h1 class="about-title" style="font-size: 20px;">
-                            Whats app us here
-
-                        </h1>
-
-                        <img src="./assets/images/social.png" alt="">
-
-                    </div>
                 </form>
             </div>
         </section>
@@ -449,14 +438,52 @@
                 </div>
             </div>
         </footer>
+        <div class="whatsapp" style="display: flex; gap: 30px; justify-content: center;">
+            <h1 class="about-title" style="font-size: 20px;">
+                Whats app us here
+
+            </h1>
+
+            <img src="./assets/images/social.png" alt="">
+
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".navbar-toggler").click(function () {
-                $(".mob").toggleClass("open"); // Toggle the 'open' class on button click
+                $(".mob").slideToggle(500); // Adjust the duration (500 milliseconds) as needed
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all the links in the menu
+            var menuLinks = document.querySelectorAll('ul li a');
+
+            // Add click event listener to each link
+            menuLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Get the target section's ID from the href attribute
+                    var targetId = this.getAttribute('href').substring(1);
+
+                    // Find the target section
+                    var targetSection = document.getElementById(targetId);
+
+                    // Scroll smoothly to the target section
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

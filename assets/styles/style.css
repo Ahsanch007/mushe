@@ -25,7 +25,6 @@ body{
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid black;
   border-radius: 0.25rem;
 }
 
@@ -44,15 +43,11 @@ body{
 
 
 .mob {
-  display: none; /* Initially hide the mobile menu */
+  display: none;
   position: absolute;
   background-color: white;
   width: 100%;
-  transition: height 0.5s ease; /* Add smooth transition */
-}
-
-.mob.open {
-  display: block; /* Show the mobile menu when the 'open' class is applied */
+  overflow: hidden;
 }
 
 .mob ul {
@@ -72,6 +67,13 @@ body{
   color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
+
+
+
+
+
+
+
 /* Your custom container class */
 .container {
     margin-right: auto;
@@ -80,6 +82,9 @@ body{
     padding-left: 15px;
   }
 
+  .start-title{
+    padding: 40px 0px;
+  }
 
   .social ul li a{
     display: inline-block;
@@ -140,7 +145,6 @@ body{
 
 
   .header-section{
-    padding: 20px 0px;
     background-color: white;
 
   }
@@ -231,6 +235,16 @@ body{
     font-size: 30px;
     font-weight: 700;
     color: #1a1a1a;
+  }
+  .about-title2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .shadoow{
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    padding: 20px 0px;
   }
 
   /* services-section */
@@ -335,6 +349,16 @@ textarea{
   background-color: #1b3d4a !important;
 }
 
+.whatsapp{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  position: fixed;
+  bottom: 16px;
+  /* z-index: 99999; */
+  right: 6px;
+  cursor: pointer;
+}
 
 
 
@@ -369,4 +393,12 @@ textarea{
   
    
 
+    .start-title{
+      padding: 0px;
+    }
+    .footer-section{
+      padding: 50px 0px;
+      background-color: #1b3d4a !important;
+    }
+  
   }
