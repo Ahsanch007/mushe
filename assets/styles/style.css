@@ -50,6 +50,7 @@ body{
   overflow: hidden;
   top: 68px;
   z-index: 999;
+  padding: 39px 0px;
 }
 
 .mob ul {
