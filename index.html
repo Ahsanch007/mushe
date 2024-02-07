@@ -368,8 +368,8 @@
                         <input type="text" placeholder="Your Name">
                     </div>
                     <div class="name">
-                        <label for="">Email</label>
-                        <input type="text" placeholder="Your Email">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Your Email">
                     </div>
                     <div class="name">
                         <label for="">Phone Number(with country code)</label>
@@ -478,6 +478,29 @@
                     }
                 });
             });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to validate email format
+            function validateEmail(email) {
+                const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return regex.test(email);
+            }
+
+            // Function to handle input changes for email validation
+            function handleEmailInput() {
+                const emailInput = document.getElementById('email');
+                const isValidEmail = validateEmail(emailInput.value);
+
+                // Update border properties based on email validity
+                emailInput.style.border = isValidEmail ? '1px solid #f7f8f8' : '1px solid red';
+                emailInput.style.borderRadius = '5px';
+            }
+
+            // Attach the validation function to the email input's input event
+            const emailInput = document.getElementById('email');
+            emailInput.addEventListener('input', handleEmailInput);
         });
     </script>
 
