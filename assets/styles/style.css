@@ -232,7 +232,7 @@ body{
   /* about-us */ 
 
   .about-us{
-    padding: 30px 0px;
+    padding-top: 30px;
   }
 
   .about-title{
@@ -440,7 +440,7 @@ textarea{
   justify-content: center;
   list-style:  none;
   gap: 20px;
-
+padding: 0px;
 }
 .social-icons ul li a{
   color: #A1824A;
