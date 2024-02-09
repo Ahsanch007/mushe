@@ -35,7 +35,7 @@
                                 </a></li>
                         </ul>
                         <div class="btn">
-                            <button>
+                            <button id="scrollToContact">
                                 Contact us
                             </button>
                         </div>
@@ -64,7 +64,7 @@
                         </a></li>
                 </ul>
                 <div class="btn">
-                    <button>
+                    <button id="scrollToContact2">
                         Contact us
                     </button>
                 </div>
@@ -94,11 +94,13 @@
                                 government and corporate solutions
 
                             </p>
+
                             <div class="btn" style="padding-top: 50px;">
-                                <button>
+                                <button id="scrollToContact3">
                                     Contact us
                                 </button>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -400,21 +402,26 @@
                     </div>
                     <div class="text-center">
                         <div class="btn">
-                            <button>
+                            <button id="scrollToContact4">
                                 Contact us
                             </button>
                         </div>
+
                     </div>
                     <p class="about-title" style="font-weight: 600;font-size: 22px; color: #1a1a1a;">
                         Man, Machine, Strategy
 
                     </p>
                     <div class="text-center">
+
                         <div class="btn">
-                            <button style="background-color: #F5F0E5; border-color:#F5F0E5 ; color: black;">
+                            <button id="scrollToContact5"
+                                style="background-color: #F5F0E5; border-color:#F5F0E5 ; color: black;">
                                 Contact us
                             </button>
                         </div>
+
+
                     </div>
                     <p class="about-title" style="font-weight: 600;font-size: 22px; color: #1a1a1a;">
                         Expert in fast, robust, secure Technology
@@ -436,7 +443,7 @@
                                 We'll help you work out what you need
                             </p>
                             <div class="btn">
-                                <button>
+                                <button id="scrollToContact6">
                                     Contact us
                                 </button>
                             </div>
@@ -591,7 +598,7 @@
 
         <!-- Contact us section  -->
 
-        <section class="services-section">
+        <section class="services-section" id="contactUs">
             <div class="container">
 
 
@@ -743,6 +750,36 @@
                     }
                 });
             });
+        });
+    </script>
+    <script>
+        document.getElementById('scrollToContact').addEventListener('click', function () {
+            document.getElementById('contactUs').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.getElementById('scrollToContact2').addEventListener('click', function () {
+            document.getElementById('contactUs').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.getElementById('scrollToContact3').addEventListener('click', function () {
+            document.getElementById('contactUs').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.getElementById('scrollToContact4').addEventListener('click', function () {
+            document.getElementById('contactUs').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.getElementById('scrollToContact5').addEventListener('click', function () {
+            document.getElementById('contactUs').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.getElementById('scrollToContact6').addEventListener('click', function () {
+            document.getElementById('contactUs').scrollIntoView({ behavior: 'smooth' });
         });
     </script>
     <script>
