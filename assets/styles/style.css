@@ -304,12 +304,15 @@ input{
   background: #f7f8f8;
   padding: 0.675rem 0.75rem;
   font-size: 14px;
-  border: 1px solid #f7f8f8;
+  border: 1px solid #E8DECF;
+  border-radius: 10px;
+  outline: none;
 
   }
   input::placeholder,
   textarea::placeholder{
-    color: #d1d1d1 ;
+    color: 
+    #A1824A ;
     
   }
 select{
@@ -317,7 +320,10 @@ select{
   background: #f7f8f8;
   padding: 0.675rem 0.75rem;
   font-size: 14px;
-  border: 1px solid #f7f8f8;
+  border: 1px solid #E8DECF;
+  border-radius: 10px;
+  outline: none;
+
 
 }
 textarea{
@@ -325,7 +331,10 @@ textarea{
   background: #f7f8f8;
   padding: 0.675rem 0.75rem;
   font-size: 14px;
-  border: 1px solid #f7f8f8;
+  border: 1px solid #E8DECF;
+  border-radius: 10px;
+  outline: none;
+
 
 }
 
@@ -362,7 +371,7 @@ textarea{
 
 .footer-section{
   padding: 100px 0px;
-  background-color: #1b3d4a !important;
+  /* background-color: #1b3d4a !important; */
 }
 
 .whatsapp{
@@ -419,6 +428,23 @@ textarea{
 }
 
 
+.discovery h1{
+  font-size: 48px;
+  font: weight 800px; 
+  color: #1C170D;
+
+}
+
+.social-icons ul{
+  display: flex;
+  justify-content: center;
+  list-style:  none;
+  gap: 20px;
+
+}
+.social-icons ul li a{
+  color: #A1824A;
+}
 
 
 
@@ -468,7 +494,7 @@ textarea{
     }
     .footer-section{
       padding: 50px 0px;
-      background-color: #1b3d4a !important;
+      /* background-color: #1b3d4a !important; */
     }
     .header-section{
       position: fixed;
