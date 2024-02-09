@@ -180,7 +180,8 @@ body{
     align-items: center;
   }
   .btn button{
-        background: #b43464;
+        background: #009963;
+        border-radius: 100px;
         color: white;
         height: 48px;
         line-height: 46px;
@@ -194,7 +195,7 @@ body{
         text-transform: uppercase;
         max-width: 100%;
         font-weight: 600;
-        border: 2px solid #b43464;
+        border: 2px solid #009963;
         text-align: center;
         overflow: hidden;
         -webkit-transition: all 0.3s ease 0s;
@@ -270,6 +271,10 @@ body{
     gap: 10px;
 
 
+}
+.services-list ul li img{
+  width: auto;
+  height: auto;
 }
 
 
@@ -371,7 +376,21 @@ textarea{
   cursor: pointer;
 }
 
+.img-slides{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.img-slides img{
+  width: 100%;
+  height: auto;
+  
+}
 
+.descriptions h2{
+  font-size: 36px;
+  font-weight: 800;
+}
 
   /* media query */
 
@@ -381,7 +400,7 @@ textarea{
         line-height: 1.2em;
         margin-bottom: 0;
         margin-top: 0;
-        font-size: 35px;
+        font-size: 48px;
         font-weight: 700;
         padding: 10px;
     }
@@ -401,7 +420,9 @@ textarea{
     .navbar-toggler{
       display: block;
     }
-  
+  .img-slides{
+    flex-wrap: wrap;
+  }
    
 
     .start-title{
