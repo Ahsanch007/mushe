@@ -259,8 +259,16 @@ body{
   .services-list{
     padding: 20px 0px;
   }
+  .services-list ul{
+    list-style: none;
+    padding: 0px;
+  }
 .services-list ul li{
     padding: 10px 0px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+
 
 }
 
