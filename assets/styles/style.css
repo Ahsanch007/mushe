@@ -391,6 +391,37 @@ textarea{
   font-size: 36px;
   font-weight: 800;
 }
+.descriptions-mob{
+  display: none;
+}
+
+
+
+.features{
+  background-color: #F5F0E5;
+  padding:5px 16px;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+
+}
+
+.features span{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.about-slide{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+
+
 
   /* media query */
 
@@ -407,7 +438,12 @@ textarea{
   }
 
   @media(max-width:800px){
-
+.descriptions{
+  display: none;
+}
+.descriptions-mob{
+  display: block;
+}
     .menu-item{
         display: none;
     }
@@ -424,7 +460,9 @@ textarea{
     flex-wrap: wrap;
   }
    
-
+  .about-slide{
+    flex-direction: column;
+  }
     .start-title{
       padding: 0px;
     }
